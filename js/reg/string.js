@@ -48,9 +48,25 @@ var str = "The rain in SPAIN stays mainly in the plain";
 var n = str.match(/ain/gi);
 // 输出结果: ['ain','AIN','ain','ain']
 
-// 
+/* 
+  5.  replace() 替换与正则表达式匹配的子串
+  语法 string.replace(searchvalue,newvalue)
+  参数 searchvalue 必需。规定子字符串或要替换的模式的 RegExp 对象。请注意，如果该值是一个字符串，则将它作为要检索的直接量文本模式，而不是首先被转换为 RegExp 对象。
+  newvalue 必需。一个字符串值。规定了替换文本或生成替换文本的函数。
+  返回值 一个新的字符串，是用 replacement 替换了 regexp 的第一次匹配或所有匹配之后得到的。
+*/
+var str = "Visit Microsoft! Visit Microsoft!";
+var n = str.replace("Microsoft", "Runoob");
+// 输出结果: Visit Runoob!Visit Microsoft!
+// 如果第二个参数传的是function
+var str = "Visit Microsoft! Visit Microsoft!";
+var n = str.replace(/Microsoft/g, (value) => {
+  console.log(value) // 匹配到的值
+  return 'Runoob'
+});
+console.log(n)
+// 输出结果: Visit Runoob! Visit Runoob!
 
-// replace() 替换与正则表达式匹配的子串
 // replaceAll() 	在字符串中查找匹配的子串，并替换与正则表达式匹配的所有子串
 // search() 检索与正则表达式相匹配的值
 // slice() 提取字符串的片断，并在新的字符串中返回被提取的部分
