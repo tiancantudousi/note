@@ -1,4 +1,4 @@
-// string 方法
+// string 方法 https://www.runoob.com/jsref/jsref-obj-string.html
 //1. concat() 连接两个或多个字符串，返回连接后的字符串
 var str1 = "Hello ";
 var str2 = "world!";
@@ -67,10 +67,38 @@ var n = str.replace(/Microsoft/g, (value) => {
 console.log(n)
 // 输出结果: Visit Runoob! Visit Runoob!
 
-// replaceAll() 	在字符串中查找匹配的子串，并替换与正则表达式匹配的所有子串
-// search() 检索与正则表达式相匹配的值
-// slice() 提取字符串的片断，并在新的字符串中返回被提取的部分
-// split() 把字符串分割为子字符串数组
+/* 
+  6.  search() 检索与正则表达式相匹配的值
+  语法 string.search(searchvalue)
+  参数 searchvalue 必须。查找的字符串或者正则表达式。
+  返回值 与指定查找的字符串或者正则表达式相匹配的 String 对象起始位置。
+*/
+var str="Visit Runoob!"; 
+var n=str.search("Runoob");
+// 输出结果: 6
+
+/* 
+  7. slice() 提取字符串的片断，并在新的字符串中返回被提取的部分
+  语法 string.slice(start,end)
+  参数 start 必须。 要抽取的片断的起始下标，第一个字符位置为 0。如果为负数，则从尾部开始截取。
+  end 可选。 紧接着要截取的片段结尾的下标。若未指定此参数，则要提取的子串包括 start 到原字符串结尾的字符串。如果该参数是负数，那么它规定的是从字符串的尾部开始算起的位置。slice(-2) 表示提取原数组中的倒数第二个元素到最后一个元素（包含最后一个元素）。
+  返回值 	提取的字符串。原字符串不变
+*/
+var str="Hello world!";
+var n=str.slice(1,5);
+// 输出结果：ello
+
+/* 
+  8. split() 把字符串分割为子字符串数组
+  语法 string.split(separator,limit)
+  参数 separator 可选。字符串或正则表达式，从该参数指定的地方分割 string Object。
+  limit 可选。该参数可指定返回的数组的最大长度。如果设置了该参数，返回的子串不会多于这个参数指定的数组。如果没有设置该参数，整个字符串都会被分割，不考虑它的长度。
+  返回值 	一个字符串数组。该数组是通过在 separator 指定的边界处将字符串 string Object 分割成子串创建的。返回的数组中的字串不包括 separator 自身。
+*/
+var str="How are you doing today?";
+var n=str.split(" ");
+//输出一个数组的值:['How','are','you','doing','today?']
+
 // substr() 从起始索引号提取字符串中指定数目的字符
 // substring() 提取字符串中两个指定的索引号之间的字符
 // toLowerCase() 把字符串转换为小写
