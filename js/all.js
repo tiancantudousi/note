@@ -1,4 +1,12 @@
 /*
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: zhangfeng
+ * @Date: 2021-12-07 20:38:44
+ * @LastEditors: zhangfeng
+ * @LastEditTime: 2021-12-10 17:18:35
+ */
+/*
 局部 JavaScript 变量
 在 JavaScript 函数内部声明的变量（使用 var）是局部变量，所以只能在函数内部访问它。（该变量的作用域是局部的）。
 您可以在不同的函数中使用名称相同的局部变量，因为只有声明过该变量的函数才能识别出该变量。
@@ -51,3 +59,6 @@ myVar = [1, 2, 3, 4]       // toString 转换为 "1,2,3,4"
 // location.pathname 返回当前页面的路径和文件名
 // location.port 返回 web 主机的端口 （80 或 443）
 // location.protocol 返回所使用的 web 协议（http: 或 https:）
+
+// history.back() - 与在浏览器点击后退按钮相同
+// history.forward() - 与在浏览器中点击向前按钮相同
