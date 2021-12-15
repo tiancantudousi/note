@@ -118,9 +118,4 @@ var n = str.substr(2, 3)
 var str1 = "Hello world!";
 var n1 = str1.substring(2, 7)
 // 输出结果: llo w  str1 Hello world!
-
-// substr() 从起始索引号提取字符串中指定数目的字符
-// substring() 提取字符串中两个指定的索引号之间的字符
-// toLowerCase() 把字符串转换为小写
-// trim() 移除字符串首尾空白
 // valueOf() 返回某个字符串对象的原始值
