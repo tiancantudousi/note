@@ -41,17 +41,6 @@ myVar = [1, 2, 3, 4]       // toString 转换为 "1,2,3,4"
 /* <a href="javascript:void(0);">点我没有反应的!</a>
 <a href="#pos">点我定位到指定位置!</a> */
 
-// isFinite() 判断传递的参数是否为有限数字。
-// parseInt() 将字符串转换成整型数字
-// parseFloat() 将字符串转换成浮点数
-// isNaN() 判断传递的参数是否不是number
-
-// Math.round() 4舍五入取整数
-// Math.random() 生产0-1之间的随机17位小数
-// Math.max(x, y, z, ..., n)  返回 x,y,z,...,n 中的最高值。
-// Math.min(x, y, z, ..., n)  返回 x,y,z,...,n中的最低值。
-// Math.floor(x) 对 x 进行下舍入
-
 // window.innerHeight 或 document.body.clientHeight 浏览器窗口的可视区域高度
 // window.innerWidth 或 document.body.clientWidth 浏览器窗口的可视区域宽度
 
