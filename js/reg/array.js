@@ -82,6 +82,18 @@ var energy = fruits.join();
 */
 
 /*
+  12. shift() 方法用于把数组的第一个元素从其中删除，并返回第一个元素的值。
+*/
+
+/*
+  15. unshift() 方法可向数组的开头添加一个或更多元素，并返回新的长度。
+  array.unshift(item1,item2, ..., itemX)
+*/
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon", "Pineapple");
+// 输出 Lemon,Pineapple,Banana,Orange,Apple,Mango
+
+/*
   10. reduce() 方法接收一个函数作为累加器，数组中的每个值（从左到右）开始缩减，最终计算为一个值。
   array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
   total 初始值, 或者计算结束后的返回值。currentValue 必需。当前元素。currentIndex 可选。当前元素的索引。
@@ -92,10 +104,6 @@ var energy = fruits.join();
 
 /*
   11. reverse() 方法用于颠倒数组中元素的顺序。
-*/
-
-/*
-  12. shift() 方法用于把数组的第一个元素从其中删除，并返回第一个元素的值。
 */
 
 /*
@@ -128,13 +136,6 @@ var fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.splice(2, 0, "Lemon", "Kiwi");
 // 输出 ['Banana', 'Orange', 'Lemon', 'Kiwi', 'Apple', 'Mango']
 
-/*
-  15. unshift() 方法可向数组的开头添加一个或更多元素，并返回新的长度。
-  array.unshift(item1,item2, ..., itemX)
-*/
-var fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits.unshift("Lemon", "Pineapple");
-// 输出 Lemon,Pineapple,Banana,Orange,Apple,Mango
 
 
 
